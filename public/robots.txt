@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://erg.monster/sitemap-index.xml

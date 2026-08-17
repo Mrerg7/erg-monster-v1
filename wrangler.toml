@@ -1,0 +1,17 @@
+# Cloudflare Workers Static Assets with canonical URL redirects
+name = "erg-monster-v1"
+compatibility_date = "2026-08-11"
+main = "src/worker.ts"
+workers_dev = true
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+[[routes]]
+pattern = "erg.monster"
+custom_domain = true
+
+[[routes]]
+pattern = "www.erg.monster"
+custom_domain = true
